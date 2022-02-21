@@ -4,6 +4,13 @@ const bodyParser= require('body-parser');
 const port=8000;
 const app= express();
 
+
+dbString="mongodb+srv://sa:Sa1234567@cluster0.1skwq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const User=require('./models/User');
+mongoose.connect(dbString)
+
+
+
 app.use(bodyParser.json());
 
 app.listen(port, ()=>{
