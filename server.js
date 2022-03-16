@@ -9,6 +9,8 @@ dbString="mongodb+srv://sa:Sa1234567@cluster0.1skwq.mongodb.net/myFirstDatabase?
 const User=require('./models/User');
 mongoose.connect(dbString)
 
+console.log('1');
+
 
 
 app.use(bodyParser.json());
